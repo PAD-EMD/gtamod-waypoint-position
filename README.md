@@ -1,6 +1,6 @@
 # GTA MOD : waypoint_position
 
-Afficher les coordonées (x, y, z) du joueur.
+Affiche les coordonnées (x, y) du repère placé sur la carte.
 
 ## Démo
 
@@ -8,7 +8,8 @@ Afficher les coordonées (x, y, z) du joueur.
 
 ## Fonctionnalités
 
-- Afficher les coordonées (x, y) en bas de l'écran du repère placée sur la carte, au format x: ... y: ...
+- Affiche en bas à droite de l'écran les coordonnées du repère placé sur la carte, au format `Waypoint: X ... | Y ...`
+- Écrit aussi les coordonnées dans la console F8 à chaque fois que le repère est posé ou déplacé
 
 ## Prérequis
 
@@ -16,26 +17,26 @@ Afficher les coordonées (x, y, z) du joueur.
 
 ## Installation
 
-1. Télécharger le dossier `waypoint_position`
-2. Copier le dossier `waypoint_position` dans `resources/`
-3. Ajouter `ensure waypoint_position` dans ton `server.cfg`
-4. Redémarrer le serveur
+1. Télécharge ce dépôt et renomme le dossier `gtamod-waypoint-position` en `waypoint_position`
+2. Copie le dossier `waypoint_position` dans `resources/`
+3. Ajoute `ensure waypoint_position` dans ton `server.cfg`
+4. Redémarre le serveur
 
 ## Utilisation
 
-Place un repère sur la carte (clic droit en mode carte) : ses coordonnées (x, y) s'affichent en bas à droite de l'écran, mises à jour automatiquement s'il est déplacé.
+Place un repère sur la carte (clic droit en mode carte) : ses coordonnées (x, y) s'affichent en bas à droite de l'écran, mises à jour automatiquement s'il est déplacé. L'affichage disparaît quand le repère est retiré.
 
 ## Structure du dossier
 
 ```
-gtamod-waypoint-position/
-├─ waypoint_position/                      -- dossier du mod
-│  ├─ waypoint_position.lua         -- script principal
-│  └─ fxmanifest.lua
-├─ waypoint_position.mp4                   -- vidéo de la démo
+waypoint_position/
+├─ client.lua               -- script principal
+├─ fxmanifest.lua
+├─ waypoint_position.mp4    -- vidéo de la démo
 └─ README.md
 ```
 
 ## Crédits
-Tuto et Mod réalisés par :
+
+Tuto et mod réalisés par :
 Alice MASSART, PAD EMD 2026.
